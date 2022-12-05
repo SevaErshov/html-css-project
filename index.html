@@ -10,22 +10,65 @@
     <script src="js/bootstrap.min.js" defer></script>
     <title>У дяди Лоди</title>
 </head>
-    <body>
-      <header class="d-flex py-3 bg-light text-center">
+    <body background="images/restaurant.jpg">
+      <header class="d-flex py-3 shadow-lg text-center" style="margin-bottom: 60px">
         <div class="col d-flex justify-content-center">
           <a href="/">
-            <img src="images/home.png" width="50" height="50" >
+            <img src="images/home.png" width="50" height="50">
           </a>
         </div>
         <div class="col d-flex justify-content-center">
           <ul class="nav py-1">
-            <li><a href="/" class="nav-link px-2 link-danger"><b>Главная</b></a></li>
-            <li><a href="menu.html" class="nav-link px-2 link-dark"><b>Меню</b></a></li>
-            <li><a href="sale.html" class="nav-link px-2 link-dark"><b>Акция</b></a></li>
-            <li><a href="reservation.html" class="nav-link px-2 link-dark"><b>Бронь</b></a></li>
+            <li><a href="/" class="nav-link px-3 link-danger" style="text-shadow: white 1px 1px 1px; font-size: 20px;"><b>Главная</b></a></li>
+            <li><a href="menu.html" class="nav-link px-3 link-dark" style="font-size: 20px;"><b>Меню</b></a></li>
+            <li><a href="sale.html" class="nav-link px-3 link-dark" style="font-size: 20px;"><b>Акция</b></a></li>
+            <li><a href="reservation.html" class="nav-link px-3 link-dark" style="font-size: 20px;"><b>Бронирование</b></a></li>
           </ul>
         </div>
         <div class="col"></div>
       </header>
+      <section class="py-5 text-center container d-flex">
+        <div class="col">
+          <a href="https://ru.freepik.com/free-photo/still-life-of-fast-food-dishes_20546577.htm#query=pepperoni&position=1&from_view=keyword" target="_blank">
+            <img class='card shadow' src='images/pizza.jpg' width="600px" height="400px">
+          </a>
+        </div>
+        <div class="col-lg-6 col-md-8 my-5">
+          <h1 class="fw-danger my-3" style="text-shadow: white 1px 1px 1px;"><b><em>Добро пожаловать на кухню <span style="color: #c70138;">дяди Лоди!</span></em></b></h1>
+          <p class="lead fw-lighter"><b>Фирменные паста, пицца и другие итальянские блюда по мотивам старейших рецептов вкупе с отборными ингредиентами. Делишес, пальчики оближешь :)</b>
+          </p>
+          <p>
+            <a href="#ingredients" class="btn btn-danger my-2">Ингредиенты</a>
+            <a href="#about" class="btn btn-secondary my-2">О нас</a>
+          </p>
+        </div>
+      </section>
+      <hr style="margin-top: 170px;">
+      <a name="ingredients"></a>
+      <section class="py-5 text-center container d-flex" style="margin-bottom: 30px;">
+        <div class="col-lg-5 col-md-8 my-5 shadow-lg" style="background-color: rgba(0, 0, 0, 0.7); padding-bottom: 65px; padding-left: 20px; padding-right: 20px;">
+          <h1 class="fw-danger my-3" style="color: white; padding-bottom: 50px; padding-top: 50px;"><b><em>Наши ингредиенты</span></em></b></h1>
+          <p class="lead fw-lighter" style="color: white; font-size: 30px;"><b>Мы придерживаемся лучших традиций, поэтому выбираем только надёжных поставщиков, которые предоставляют нам свежие продукты.</b>
+          </p>
+          <a href="#top" class="btn btn-secondary my-2">Наверх</a>
+        </div>
+        <div class="col-lg-6 col-md-8" style="margin-top: 115px; margin-left: 150px">
+          <a target="_blank" href="https://ru.freepik.com/free-photo/front-view-fresh-tomatoes-with-tomato-paste-on-blue-salad-red-tree-vegetable-color-food-ripe_17188538.htm#query=%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%B0%D1%81%D1%82%D0%B0&position=0&from_view=keyword"><img src="images/tomato.jpg" class='card shadow' width="600px" height="400px"></a>
+        </div>
+      </section>
+      <hr style="margin-bottom: 100px; margin-top: 25px;">
+      <a name="about"></a>
+      <section class="py-5 text-center container d-flex" style="margin-bottom: 75px;">
+        <a name="ingredients"></a>
+        <div class="col-lg-6 col-md-8" style="margin-top: 50px; margin-right: 100px">
+          <a target="_blank" href="https://ru.freepik.com/free-photo/front-view-fresh-tomatoes-with-tomato-paste-on-blue-salad-red-tree-vegetable-color-food-ripe_17188538.htm#query=%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%B0%D1%81%D1%82%D0%B0&position=0&from_view=keyword"><img src="images/tomato.jpg" class='card shadow' width="600px" height="400px"></a>
+        </div>
+        <div class="col-lg-5 col-md-8 my-5 shadow-lg" style="background-color: rgba(0, 0, 0, 0.7); padding-bottom: 65px; padding-left: 20px; padding-right: 20px;">
+          <h1 class="fw-danger my-3" style="color: white; padding-bottom: 25px; padding-top: 50px;"><b><em>О нас</span></em></b></h1>
+          <p class="lead fw-lighter" style="color: white; font-size: 30px; padding-bottom: 25px;"><b>Мы находимся в г. Москва по адресу ул. Арбат, 10</b>
+          </p>
+          <a href="#top" class="btn btn-secondary my-2">Наверх</a>
+        </div>
+      </section>
     </body>
 </html>
