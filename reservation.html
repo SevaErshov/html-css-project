@@ -10,7 +10,7 @@
     <script src="js/bootstrap.min.js" defer></script>
     <title>Забронируй столик у дяди Лоди</title>
 </head>
-    <body background="images/restaurant.jpg">
+    <body background="images/restaurant.jpg" style="min-width: 800px; max-width: 2560px;">
       <header class="d-flex py-3 shadow-lg text-center">
         <div class="col d-flex justify-content-center">
           <a href="/">
@@ -22,10 +22,62 @@
             <li><a href="/" class="nav-link px-3 link-dark" style="font-size: 20px;"><b>Главная</b></a></li>
             <li><a href="menu.html" class="nav-link px-3 link-dark" style="font-size: 20px;"><b>Меню</b></a></li>
             <li><a href="sale.html" class="nav-link px-3 link-dark" style="font-size: 20px;"><b>Акция</b></a></li>
-            <li><a href="reservation.html" class="nav-link px-3 link-danger" style="font-size: 20px;  text-shadow: white 1px 1px 1px; "><b>Бронирование</b></a></li>
+            <li><a href="reservation.html#rsrv" class="nav-link px-3 link-danger" style="font-size: 20px;  text-shadow: white 1px 1px 1px;"><b>Бронирование</b></a></li>
           </ul>
         </div>
         <div class="col"></div>
       </header>
+      <section class="containter d-flex m-5 py-5 col text-center">
+        <a name="rsrv"></a>
+        <div class="col mx-2">
+          <img src="images/good.jpg" width="480px" height="720px" class="shadow">
+        </div>
+        <div style="background-color: rgba(0, 0, 0, 0.75); color: white;" class="p-5 shadow-lg col-6">
+          <h1><b><em>Бронирование</em></b></h1>
+          <br>
+          <p style="font-size: 20px;">Чтобы забронировать столик, заполните форму ниже. Впишите ваши фамилию, имя. Выберите дату посещения и тип столика.</p>
+          <p style="font-size: 20px;">На почту вам придёт письмо для подтверждения брони. В день визита мы позвоним вам за два часа до посещения.</p>
+          <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self' class="d-flex justify-content-start">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Имя</label>
+                <input type="text" class="form-control" name="firstName" placeholder="Введите ваше имя">
+              </div>
+
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Фамилия</label>
+                <input type="text" class="form-control" name="lastName" placeholder="Введите вашу фамилию">
+              </div>
+  
+              <div class="col-12">
+                <label for="telephone" class="form-label">Номер телефона</label>
+                <input type="tel" class="form-control" name="phone_number" placeholder="+7(ХХХ) ХХХХ ХХ" required="">
+              </div>
+  
+              <div class="col-12">
+                <label for="email" class="form-label">Электронная почта</label>
+                <input type="email" class="form-control" name="email" placeholder="you@example.com">
+              </div>
+
+              <div class="col-sm-6">
+                <label for="date" class="form-label">Дата визита</label>
+                <input type="date" class="form-control" name="date" placeholder="Введите вашу фамилию">
+              </div>
+
+              <div class="col-sm-6">
+                <label for="table" class="form-label">Тип столика</label>
+                <select name="table" class="form-select">
+                  <option>На двоих</option>
+                  <option>От двух до четырёх человек</option>
+                  <option>От пяти человек</option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <input type="submit" class="form-control" name="submit">
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
     </body>
 </html>

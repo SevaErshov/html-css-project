@@ -10,7 +10,7 @@
     <script src="js/bootstrap.min.js" defer></script>
     <title>Акция от дяди Лоди</title>
 </head>
-    <body background="images/restaurant.jpg">
+    <body background="images/restaurant.jpg" style="min-width: 800px; max-width: 2560px;">
       <header class="d-flex py-3 shadow-lg text-center">
         <div class="col d-flex justify-content-center">
           <a href="/">
@@ -22,10 +22,26 @@
             <li><a href="/" class="nav-link px-3 link-dark" style="font-size: 20px;"><b>Главная</b></a></li>
             <li><a href="menu.html" class="nav-link px-3 link-dark" style="font-size: 20px;"><b>Меню</b></a></li>
             <li><a href="sale.html" class="nav-link px-3 link-danger" style="font-size: 20px; text-shadow: white 1px 1px 1px;"><b>Акция</b></a></li>
-            <li><a href="reservation.html" class="nav-link px-3 link-dark" style="font-size: 20px;"><b>Бронирование</b></a></li>
+            <li><a href="reservation.html#rsrv" class="nav-link px-3 link-dark" style="font-size: 20px;"><b>Бронирование</b></a></li>
           </ul>
         </div>
         <div class="col"></div>
       </header>
+
+      <section class="py-5 container col-5" style="flex-direction: column;">
+        <h1 class="fw-danger my-5" style="text-shadow: white 1px 1px 1px; text-align: center;"><b><em>У нас действует <span style="color: #c70138;">акция!</span></em></b></h1>
+        <p class="lead fw-lighter text-center"><b>Сделайте заказ от 750 рублей и получите скидку! Чем больше сумма, тем больше скидка:</b></p>
+        <div class="col my-5 p-5 text-center" style="background-color: rgba(0, 0, 0, 0.75)">
+          <p style="color: white;"><b>Введите сумму в рублях. Если она больше 750 рублей, то скидка 5%. Если больше 1000, то 10%. Если больше 1600 рублей, то 15%: </b></p>
+          <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" id="UserEnter" name="UserEnter" target="_blank" class="d-flex flex-column align-items-center">
+            <input name="formulation" type="hidden">
+            <label style="color: white;"><b>Введите сумму: </b><input id="price" name="price"  type="number" value=1999 class="form-control my-3"></label>
+            <input name="result" type="hidden">
+            <label><input id="send" type="button" value="Отправить" class="form-control"></label></li>
+          </form>
+          <p id="result" style="color: white;" class="my-2"></p>
+          <script src="js/price.js"></script>
+        </div>
+      </section>
     </body>
 </html>
